@@ -48,6 +48,11 @@ To run these project is necessary following the next steps.
 * pipenv
 * make
 
+#### Active the `pipenv` environment
+```bash
+$ pipenv shell
+```
+
 #### Clone the project
 ```bash
 $ git clone https://github.com/ChrisVidal10/nirvana-challenge.git
@@ -61,14 +66,14 @@ $ make install_deps
 ```
 
 #### Local execution
-- Run the command `Flask run` to start the server (http://localhost:3000)
+- Run `Flask` to start the server
 
 ```bash
-$ Flask run
+$ flask run
 ```
 
 ### Testing the code
-- Run the command `pytest -v` run all the tests
+- Run `pytest` to run all the tests
 
 ```bash
 $  python -m pytest -v
@@ -90,7 +95,7 @@ The default strategy is arithmetic mean ("average").
 
 ### Example
 
-- GET `http://127.0.0.1:3000/coalesce-api?member_id=1&coalescing_strategy=max`
+- GET `/coalesce-api?member_id=1&coalescing_strategy=max`
 ```json
 {
   "deductible": 1200,
@@ -99,7 +104,7 @@ The default strategy is arithmetic mean ("average").
 }
 ```
 
-- If the `member_id` is invalid the API returns a `404` Error and the following text. `http://127.0.0.1:3000/coalesce-api?member_id=t3st`
+- If the `member_id` is invalid the API returns a `404` Error and the following text. `/coalesce-api?member_id=t3st`
 ```json
 {
   "error": "Member Id #t3st Not found"
