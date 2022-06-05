@@ -93,6 +93,14 @@ $  python -m pytest -v
 
 The default strategy is arithmetic mean ("average").
 
+### Users
+
+- In order to have users for testing, I've created the next ones.
+  - member_id: 1
+  - member_id: 2
+  - member_id: 3
+  - member_id: 4
+
 ### Example
 
 - GET `/coalesce-api?member_id=1&coalescing_strategy=max`
